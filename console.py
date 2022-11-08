@@ -6,9 +6,10 @@ class Console(cmd.Cmd):
 
     """Interactive CLI for command line editing """
     prompt: str = "(hbnb)"
-    def do_great(self, line):
-        print("hello")
-    def do_EOF(self,line):
+    def do_quit(self,line):
+        """Interactive CLI for command line editing """
+        return True
+    def do_EOF(self):
         return True
 if __name__   == "__main__":
     Console().cmdloop()
